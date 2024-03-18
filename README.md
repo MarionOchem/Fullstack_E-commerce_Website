@@ -1,96 +1,8 @@
-# Ada Love Chaise (school project)
-Le projet consiste, pour deux équipes back-end et front-end, à créer une plateforme de vente de meubles d'occasion.
-
-## Features attendues
-
-### Abouties
-* connexion back / front / DB (API)
-* DB relationnelle (PostgreSQL)
-* documentation (code + SQL) 
-* nomenclature commune
-* page 404
-* catalogue complet annonces
-* filtres d'affichage annonces
-* détail annonce
-* pages : home / login / post / backoffice
+# FullStack e-commerce website (school project)
+An 8-person collaborative project formed two teams of 4 individuals each, dedicated to backend and frontend development. Completed within an 8-day timeframe, roles were rotated on the 4th day.
 
 
-### WIP
-
-* backoffice : features valider / supprimer annonce
-* login : script de connexion / sécurisation mdp (hash) / session (token)
-* register : form + interrogation DB / inscription DB
-
-### Backlog
-
-* pages mon profil / mon panier / mes annonces
-* gestion d'un calendrier d'événements
-* environnement de test
-* déploiement
-
-## Bien démarrer
-
-Ces instructions vous permettront d'obtenir une copie du projet en fonctionnement sur votre machine locale pour le développement et les tests. 
-
-Consultez la section déploiement pour des notes sur comment déployer le projet sur un système en production.
-
-### Pré-requis
-
-Ce dont vous avez besoin pour installer le logiciel :
-
-- un IDE
-- un shell
-- Node.js (vérifier qu'il est installé en tapant $`node -v`)
-- npm (verifier qu'il est installé en tapant $`npm -v` )
-- un navigateur
-
-
-### Installation / lancement
-
-#### - Back end
-
-Se placer dans le dossier `/Back-end` :
-
-- Installer/mettre à jour les dépendances de Node : `npm install`
-- Lancer `npm run dev` (si vous êtes en environnement de dev)
-  OU
-- Lancer `npm run start` (si vous êtes en environnement de production)
-
-#### - DataBase
-
-- Installer [PostgreSQL](https://www.postgresql.org/)
-- Installer [pgAdmin4](https://www.pgadmin.org/) (minimum)
-- Suivre les instructions contenues dans le script :   `tables_db_lovechaise.sql`
-
-```
-POUR UTILISER CE SCRIPT .SQL :
-1. Télécharger PostgreSQL (au moins pgAdmin 4)
-2. Executer le fichier d'installation et enregistrer le mot de passe "postgres" pour l'user par default "postgres"
-3. Ouvrir pgAdmin
-4. Ouvrir le dossier "Server"
-5. Insérer le mot de passe "postgres" dans le prompt
-6. Cliquer droit sur "Database" > Create > Database
-7. Nommer la db "Lovechaise" + save
-8. Cliquer droit sur la DB Lovechaise
-9. Cliquer sur "Query Tool"
-10. Cliquer sur le bouton "open file" (icône "dossier")
-11. Sélectionner et importer le fichier tables_db_lovechaise.sql
-12. Cliquer sur le bouton "Execute Script" (icône "play")
-13. Si besoin de tester des queries : repartir de l'étape 8 
-```
-
-#### - Front end
-Se placer dans le dossier `/Front-end` :
-
-- Installer/mettre à jour les dépendances de Node : `npm install`
-- Lancer `npm run dev` (si vous êtes en environnement de dev)
-  OU
-- Lancer `npm run start` (si vous êtes en environnement de production)
-
-### Deploiement
-(tbc)
-
-## Conçu avec
+## Tech Stack :
 
 * [Express](https://expressjs.com/) pour Node.js
 * [PostgreSQL](https://www.postgresql.org/)
@@ -101,11 +13,90 @@ Se placer dans le dossier `/Front-end` :
 * [Tailwind CSS](https://tailwindcss.com/)
 * [GitHub](https://github.com/)
 
+
+## Features :
+
+### Implemented
+
+* Relational database with integrity constraints
+* Integration between a relational database, en Express API and a React front
+* Product list page
+* Product details page
+* Add product page 
+* Admin dashboard page 
+* Login page
+* Register Page
+* Product filter
+
+
+### WIP
+
+* User account page (my profile, my ads, my purchases)
+* Update profile/password in user account
+* Cart add/remove items
+* Checkout, payment confirmation and payment successfull pages
+* Posting a review on a saler account 
+* Wishlist add/remove items
+* Shipping info in session storage
+* Sending mail to user when order are placed/processed/shiped
+* Hashing password
+* JSON web token 
+* Admin : edit, cancel, validate newly added products
+* Admin : list of orders made my users
+* Admin : Update order status / delete order
+* Admin : Delete user
+* Admin : Stock management
+* Admin : Sale management
+* Admin : Messaging system / customer support chat to handle users inquiries and complaints 
+
+
+### Installation
+
+After downloading/cloning the repository code follow below steps:
+
+
+#### - DataBase
+
+- Install [PostgreSQL](https://www.postgresql.org/) 
+- Install [pgAdmin4](https://www.pgadmin.org/) 
+- Follow the instructions contained within the script `tables_db_lovechaise.sql` :
+
+```
+1. Download PostgreSQL (at least pgAdmin 4).
+2. Run the installation file and set the password "postgres" for the default user "postgres".
+3. Open pgAdmin.
+4. Open the "Server" folder.
+5. Enter the password "postgres" in the prompt.
+6. Right-click on "Database" > Create > Database.
+7. Name the database "Lovechaise" and save.
+8. Right-click on the Lovechaise DB.
+9. Click on "Query Tool".
+10. Click on the "open file" button (folder icon).
+11. Select and import the file tables_db_lovechaise.sql.
+12. Click on the "Execute Script" button (play icon).
+13. If needed to test queries: return to step 8.
+```
+
+### Back end
+
+Move in folder `/Back-end` and run following commands : 
+
+- Installing/updating Node dependencies : `npm install`
+- Run : `npm run dev` /  `npm run start` 
+
+### Front end
+
+Move in folder `/Front-end` and run following commands : 
+
+- Installing/updating Node dependencies : `npm install`
+- Run : `npm run dev` /  `npm run start`
+- 
+
 ## Repository (origine)
 
 [Ada tech School GitHub](https://github.com/adatechschool/projet-plateforme-de-vente-de-meubles-adalovechaises)
 
-## Auteur·es
+### Contributors
 
 * **Clément Coadou**
 * **Guillaume Depecker**
@@ -115,4 +106,8 @@ Se placer dans le dossier `/Front-end` :
 * **Tijana Laporte-Mitrovic** - [GitHub](https://github.com/Tiki102) - [LinkedIn](https://www.linkedin.com/in/tijana-laporte-mitrovic-b13859152/)
 * **Zoé Lecaille**
 
-Avec le soutien de Sofiane Khireddine et des encadrant·es d'Ada Tech School.
+With the support of Sofiane Khireddine and the mentors at Ada Tech School.
+
+
+
+
