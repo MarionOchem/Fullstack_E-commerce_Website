@@ -4,7 +4,7 @@ An 8-person collaborative project formed two teams of 4 individuals each, dedica
 
 ## Tech Stack :
 
-* [Express](https://expressjs.com/) pour Node.js
+* [Express](https://expressjs.com/) 
 * [PostgreSQL](https://www.postgresql.org/)
 * [pgAdmin](https://www.pgadmin.org/)
 * [Postman](https://www.postman.com/)
