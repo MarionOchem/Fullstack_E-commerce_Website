@@ -1,4 +1,4 @@
-# FullStack e-commerce website (school project)
+# FullStack e-commerce website (collective project)
 An 8-person collaborative project formed two teams of 4 individuals each, dedicated to backend and frontend development. Completed within an 8-day timeframe, roles were rotated on the 4th day.
 
 
