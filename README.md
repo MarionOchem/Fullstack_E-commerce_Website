@@ -90,7 +90,10 @@ Move in folder `/Front-end` and run following commands :
 
 - Installing/updating Node dependencies : `npm install`
 - Run : `npm run dev` /  `npm run start`
-- 
+
+
+![Example GIF](WebSite.gif)
+
 
 ## Repository (origine)
 
