@@ -93,6 +93,8 @@ Move in folder `/Front-end` and run following commands :
 
 
 ![Example GIF](WebSite.gif)
+
+
 ![](WebSite.png)
 
 
